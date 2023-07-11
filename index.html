@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Calculadora de Médias</title>
+    <title>Calculadora de médias</title>
 </head>
 <body>
+    <header>
+        <img src="./images/logo.png" alt="capelo">
+        <h1>Calculadora de médias</h1>
+    </header>
+    <form>
+        <input type="text" required placeholder="Nome da atividade">
+        <input type="text" required placeholder="Nota de atividade" min="10" max="10">
+        <button type="submit">Adicionar +</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome da Atividade</th>
+                <th>Nota</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Atividade</td>
+                <td>0</td>
+                <td><img src="./images/aprovado.png" alt="aprovado"></td>
+            </tr>
+            <tr>
+                <td>Média final</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
     <script src="main.js"></script>
 </body>
 </html>
