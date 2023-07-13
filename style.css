@@ -1,5 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;700&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+body {
+    background-color: #EEEDEF;
+    padding-top: 100px;
+}
+
+#container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#capelo {
+    height: 36px;
+    margin-right: 16px;
+}
+
+#titulo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+form {
+    margin-bottom: 56px;
+    display: flex;
+    justify-content: center;
+}
+
+form input {
+    font-size: 24px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    padding: 6px;
+    margin-right: 30px;
+}
+
+#txtNota {
+    width: 90px;
+    text-align: center;
+}
+
+#botaoAdd {
+    background-color: #009432;
+    color: white;
+    width: 150px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    padding: 6px;
+    cursor: pointer;
+}
+
+#botaoAdd:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+#tabela {
+    width: 100%;
+}
+
+#tabela th {
+    border-bottom: 3px solid black;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#tabela td {
+    padding: 16px 0;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#rodapeTabela td {
+    font-weight: bold;
+}
+
+#res {
+    padding: 8px;
+    border-radius: 5px;
 }

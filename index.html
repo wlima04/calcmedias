@@ -7,36 +7,35 @@
     <title>Calculadora de médias</title>
 </head>
 <body>
-    <header>
-        <img src="./images/logo.png" alt="capelo">
-        <h1>Calculadora de médias</h1>
-    </header>
-    <form>
-        <input type="text" required placeholder="Nome da atividade">
-        <input type="text" required placeholder="Nota de atividade" min="10" max="10">
-        <button type="submit">Adicionar +</button>
-    </form>
-    <table>
-        <thead>
-            <tr>
-                <th>Nome da Atividade</th>
-                <th>Nota</th>
-                <th>Resultado</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Atividade</td>
-                <td>0</td>
-                <td><img src="./images/aprovado.png" alt="aprovado"></td>
-            </tr>
-            <tr>
-                <td>Média final</td>
-                <td>-</td>
-                <td>-</td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="container">
+        <header>
+            <img id="capelo" src="./images/logo.png" alt="capelo">
+            <h1 id="titulo" >Calculadora de médias</h1>
+        </header>
+        <form id="form">
+            <input type="text" id="txtAtiv" required placeholder="Nome da atividade">
+            <input type="number" id="txtNota" required placeholder="Nota" max="10" min="0">
+            <button type="submit" id="botaoAdd">Adicionar +</button>
+        </form>
+        <table cellspacing="0" id="tabela">
+            <thead id="cabecalhoTabela">
+                <tr>
+                    <th>Nome da Atividade</th>
+                    <th>Nota</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela">
+            <tfoot id="rodapeTabela">
+                <tr>
+                    <td>Média final</td>
+                    <td>-</td>
+                    <td><span id="res">-</span></td>
+                </tr>
+            </tfoot>
+            </tbody>
+        </table>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
